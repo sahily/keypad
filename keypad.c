@@ -54,7 +54,8 @@ unsigned char asciiTab[16] = {"0123456789ABCDEF"};
 
 unsigned int numbersToDisplay[4] = {'0','0','0','0'};
 
-unsigned char inputColumn[4] = {1,1,1,1};   //used for scanner function. When value is low, key on the column is selected
+unsigned char inputColumn[4] = {1,1,1,1};   /* used for scanner function. When value is low, */ 
+                                            /* key on the column is selected                 */
 
 unsigned int digitSelector[4][4] = {
                                       0,1,1,1,   //select 4th digit on 7seg display
@@ -98,7 +99,8 @@ void main(void)
  * Function: init
  * -----------------
  *
- * Initializes variables, clears first three 7seg displays, configures timer mode, and sets input pins for keypad
+ * Initializes variables, clears first three 7seg displays, configures timer mode, 
+ *    and sets input pins for keypad
  *
  */
 
@@ -209,7 +211,8 @@ void scanner(void)
                                 /* through digitSelector and key on that row is pushed.     */
      
     
-    x = inputColumn[scanNumber%4];      //We are interested in the column of the key that was pushed. Hence we take the modulus. 
+    x = inputColumn[scanNumber%4];      /* We are interested in the column of the key that was pushed. */ 
+                                        /* Hence we take the modulus.                                  */
 
     if(keyPushConfirmed == 1)
     {
@@ -232,7 +235,7 @@ void scanner(void)
             {
                 pushDetectedCount--;
                 keyCode = scanNumber;           /* save key value of detected push. If push is confirmed this  */
-												/* value will be displayed.       							   */
+                                                /* value will be displayed.                                    */
             }
         } else {
             pushDetectedCount--;
@@ -274,7 +277,8 @@ void buzzer(void)
  *
  * Runs each time timer 0 interrupt is generated 
  *
- * resets Timer 0's count register to start value, displays keypad value, scans keypad, and sounds buzzer when key is pushed
+ * resets Timer 0's count register to start value, displays keypad value, scans keypad, 
+ *    and sounds buzzer when key is pushed
  * 
  *
  */

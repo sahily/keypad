@@ -231,7 +231,8 @@ void scanner(void)
             if(x == 0)                          //x is 0 if key push is detected, 1 otherwise
             {
                 pushDetectedCount--;
-                keyCode = scanNumber;           //save key value of detected push. If push is confirmed this value will be displayed.       
+                keyCode = scanNumber;           /* save key value of detected push. If push is confirmed this  */
+												/* value will be displayed.       							   */
             }
         } else {
             pushDetectedCount--;

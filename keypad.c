@@ -182,6 +182,9 @@ void resetTimer0(void)
 
 void display(void)
 {
+
+	P0 = 0x00;
+
     sl1 = digitSelector[scanNumber/4][0];           /* Digit is selected when its pin is reset.         */
     sl2 = digitSelector[scanNumber/4][1];           /* Only one of these is selected in each iteration  */
     sl3 = digitSelector[scanNumber/4][2];           /* The keypad is also connected to these pins.      */

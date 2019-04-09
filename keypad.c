@@ -69,7 +69,7 @@ unsigned int scanNumber;        //used with digitSelctor variable in display fun
                                  
 unsigned int x;                 //used in scanner function to determine whether key is pushed
 bit keyPushConfirmed;           //set when it is determined key has been pushed
-bit keyReleaseConfirmed;            //set when it is determined key has been released
+bit keyReleaseConfirmed;        //set when it is determined key has been released
 unsigned int pushDetectedCount; //used to determine whether key is pushed after a push was detected
 unsigned int pushReleasedCount; //used to determine whether key is released after a push was confirmed
 unsigned char keyCode;          //the value of the key that was detected

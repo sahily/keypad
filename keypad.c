@@ -295,7 +295,7 @@ void displayKeyValue(void)
  *
  * Runs each time timer 0 interrupt is generated 
  *
- * resets Timer 0's count register to start value, displays keypad value, scans keypad, 
+ * resets Timer 0's count register to start value, displays value on 7-segment display, scans keypad, 
  *    and sounds buzzer when key is pushed
  * 
  *

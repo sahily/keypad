@@ -16,14 +16,14 @@ void resetTimer0(void);
 void displayKeyValue(void);
 
 sbit buzz = P1^5;
-sbit sl1 = P2^0;
-sbit sl2 = P2^1;
-sbit sl3 = P2^2;
-sbit sl4 = P2^3;
-sbit krl1 = P2^4;
-sbit krl2 = P2^5;
-sbit krl3 = P2^6;
-sbit krl4 = P2^7;
+sbit krl1 = P2^0;
+sbit krl2 = P2^1;
+sbit krl3 = P2^2;
+sbit krl4 = P2^3;
+sbit sl1 = P2^4;
+sbit sl2 = P2^5;
+sbit sl3 = P2^6;
+sbit sl4 = P2^7;
 
 code unsigned int numberList[23] = {
                                      0xFC,    //0         
